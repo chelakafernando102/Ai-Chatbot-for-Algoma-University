@@ -93,8 +93,55 @@ def extract_course_code(text: str) -> str | None:
 
 
 def find_knowledge_base_answer(user_question: str) -> str | list | None:
-    knowledge_base = load_knowledge_base()
-    question_items = knowledge_base.get("questions", [])
+knowledge_base = load_knowledge_base()
+question_items = knowledge_base.get("questions", [])
+
+
+normalized_question = normalize_text(user_question)
+
+
+for item in question_items:
+    if not isinstance(item, dict):
+        continue
+
+    question = normalize_text(item.get("question", ""))
+
+    if question == normalized_question:
+        return item.get("answer")
+
+
+for item in question_items:
+    if not isinstance(item, dict):
+        continue
+
+    question = normalize_text(item.get("question", ""))
+
+    if question and question in normalized_question:
+        return item.get("answer")
+
+user_words = set(normalized_question.split())
+
+best_answer = None
+best_score = 0
+
+for item in question_items:
+    if not isinstance(item, dict):
+        continue
+
+    question = normalize_text(item.get("question", ""))
+    question_words = set(question.split())
+
+    score = len(user_words & question_words)
+
+    if score > best_score:
+        best_score = score
+        best_answer = item.get("answer")
+        
+    if best_score >= 1:
+    return best_answer
+
+return None
+
 
     question_map = {
         normalize_text(item.get("question", "")): item.get("answer")
