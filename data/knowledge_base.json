@@ -352,6 +352,314 @@
 "question": "bye",
 "answer": "Goodbye! Wishing you success in your academic journey at Algoma University."
 }
+{
+"question": "can i transfer credits",
+"answer": "Transfer credits may be available for courses completed at recognized institutions. Students should contact Admissions or the Registrar for evaluation details."
+},
+{
+"question": "how do transfer credits work",
+"answer": "Transfer credits are evaluated based on course equivalency, grades, and program requirements."
+},
+{
+"question": "what is the registrar",
+"answer": "The Registrar's Office manages academic records, registration, transcripts, graduation processing, and enrollment services."
+},
+{
+"question": "how do i get my transcript",
+"answer": "Official transcripts are usually requested through the student portal or Registrar's Office."
+},
+{
+"question": "what is brightspace",
+"answer": "Brightspace is an online learning platform used for accessing course materials, assignments, grades, and communication."
+},
+{
+"question": "where do i submit assignments",
+"answer": "Assignments are commonly submitted through Brightspace or according to instructor instructions."
+},
+{
+"question": "how do online exams work",
+"answer": "Online exams may be completed through Brightspace or approved platforms depending on the course."
+},
+{
+"question": "what is academic integrity",
+"answer": "Academic integrity means completing your work honestly and following university policies regarding plagiarism, cheating, and unauthorized assistance."
+},
+{
+"question": "what is plagiarism",
+"answer": "Plagiarism is presenting someone else's work, ideas, or writing as your own without proper citation."
+},
+{
+"question": "how do i avoid plagiarism",
+"answer": "Use proper citations, write in your own words, and follow academic integrity guidelines."
+},
+{
+"question": "what is osap",
+"answer": "OSAP is the Ontario Student Assistance Program which provides eligible students with financial aid."
+},
+{
+"question": "financial aid",
+"answer": "Financial aid options may include scholarships, bursaries, student loans, and grants."
+},
+{
+"question": "bursaries",
+"answer": "Bursaries are financial awards usually based on demonstrated financial need."
+},
+{
+"question": "student loans",
+"answer": "Eligible students may apply for government or private student loans to help finance their education."
+},
+{
+"question": "can i work while studying",
+"answer": "Many students work part-time while studying, depending on their schedule and immigration status."
+},
+{
+"question": "work permit",
+"answer": "International students should check IRCC regulations regarding work eligibility and permits."
+},
+{
+"question": "study permit",
+"answer": "International students usually require a valid Canadian study permit to study in Canada."
+},
+{
+"question": "post graduate work permit",
+"answer": "Eligible graduates may apply for a Post-Graduation Work Permit after completing their studies."
+},
+{
+"question": "pgwp",
+"answer": "PGWP stands for Post-Graduation Work Permit, which may allow eligible international graduates to work in Canada."
+},
+{
+"question": "how many courses should i take",
+"answer": "The number of courses depends on your academic goals, workload, and student status."
+},
+{
+"question": "how long is a semester",
+"answer": "Most semesters last approximately four months, excluding breaks and exam periods."
+},
+{
+"question": "fall semester",
+"answer": "The Fall semester usually begins in September."
+},
+{
+"question": "winter semester",
+"answer": "The Winter semester generally begins in January."
+},
+{
+"question": "summer semester",
+"answer": "Some courses and programs may be offered during the Summer semester."
+},
+{
+"question": "course overload",
+"answer": "Course overload approval may be required if a student wants to exceed the standard course limit."
+},
+{
+"question": "drop a course",
+"answer": "Students can usually drop courses through the student portal before academic deadlines."
+},
+{
+"question": "withdraw from a course",
+"answer": "Course withdrawal policies and deadlines depend on the academic calendar."
+},
+{
+"question": "how do i contact professors",
+"answer": "Students typically contact professors through university email or Brightspace."
+},
+{
+"question": "office hours",
+"answer": "Office hours are designated times when instructors are available for student questions and support."
+},
+{
+"question": "attendance",
+"answer": "Attendance expectations depend on the instructor and course outline."
+},
+{
+"question": "late assignment",
+"answer": "Late assignment policies vary depending on the course and instructor."
+},
+{
+"question": "can i retake a course",
+"answer": "Students may be allowed to retake certain courses depending on university policies."
+},
+{
+"question": "academic warning",
+"answer": "Academic warnings may occur when student performance falls below required academic standards."
+},
+{
+"question": "deans list",
+"answer": "Students with strong academic performance may qualify for the Dean's List."
+},
+{
+"question": "honours program",
+"answer": "Honours programs generally require more credits and higher academic performance standards."
+},
+{
+"question": "general degree",
+"answer": "General degree programs may require fewer credits compared to honours programs."
+},
+{
+"question": "can i switch programs",
+"answer": "Students may be able to change programs depending on academic standing and requirements."
+},
+{
+"question": "change major",
+"answer": "Changing your major may require approval and updated degree planning."
+},
+{
+"question": "minor",
+"answer": "A minor is a secondary area of academic study completed alongside a major."
+},
+{
+"question": "double major",
+"answer": "A double major allows students to complete two major fields of study."
+},
+{
+"question": "academic calendar",
+"answer": "The academic calendar contains important information about programs, courses, deadlines, and university policies."
+},
+{
+"question": "student portal",
+"answer": "The student portal is used for registration, grades, schedules, tuition information, and academic services."
+},
+{
+"question": "email",
+"answer": "Students usually receive an official university email account for academic communication."
+},
+{
+"question": "wifi password",
+"answer": "Campus Wi-Fi information is usually provided through university IT services."
+},
+{
+"question": "it support",
+"answer": "IT support may help students with accounts, passwords, technical issues, and online systems."
+},
+{
+"question": "password reset",
+"answer": "Password resets are usually handled through university IT services or online account recovery systems."
+},
+{
+"question": "bookstore",
+"answer": "The campus bookstore may provide textbooks, merchandise, supplies, and course materials."
+},
+{
+"question": "textbooks",
+"answer": "Required textbooks are usually listed in course outlines or bookstore systems."
+},
+{
+"question": "study permit extension",
+"answer": "International students may need to extend their study permits before expiration."
+},
+{
+"question": "immigration",
+"answer": "Immigration-related questions should be directed to authorized advisors or IRCC resources."
+},
+{
+"question": "health insurance",
+"answer": "Health insurance requirements may vary for domestic and international students."
+},
+{
+"question": "medical help",
+"answer": "Students may have access to health and wellness support services depending on campus resources."
+},
+{
+"question": "counseling",
+"answer": "Counseling and mental wellness support may be available for students experiencing stress or personal challenges."
+},
+{
+"question": "student card",
+"answer": "Student cards are commonly used for identification and access to university services."
+},
+{
+"question": "graduation ceremony",
+"answer": "Graduation ceremonies celebrate students who successfully complete their programs."
+},
+{
+"question": "convocation",
+"answer": "Convocation is the official graduation ceremony for completing students."
+},
+{
+"question": "can i study online",
+"answer": "Some programs and courses may be available online depending on availability."
+},
+{
+"question": "hybrid classes",
+"answer": "Hybrid classes combine online and in-person learning components."
+},
+{
+"question": "research",
+"answer": "Students may participate in research opportunities depending on their program and faculty."
+},
+{
+"question": "group projects",
+"answer": "Many university courses include group projects to encourage collaboration and teamwork."
+},
+{
+"question": "presentations",
+"answer": "Presentations are commonly used in university courses to assess communication and understanding."
+},
+{
+"question": "public speaking",
+"answer": "Practicing regularly and preparing thoroughly can help improve public speaking confidence."
+},
+{
+"question": "time management",
+"answer": "Effective time management helps students balance assignments, exams, work, and personal responsibilities."
+},
+{
+"question": "burnout",
+"answer": "Burnout can happen when students are overwhelmed. Taking breaks and seeking support can help."
+},
+{
+"question": "motivation",
+"answer": "Setting goals, staying organized, and maintaining balance can help improve motivation."
+},
+{
+"question": "study tips",
+"answer": "Study consistently, review material regularly, practice active learning, and avoid last-minute cramming."
+},
+{
+"question": "best study method",
+"answer": "The best study method depends on the student, but active recall and spaced repetition are often effective."
+},
+{
+"question": "group study",
+"answer": "Group study sessions can help students review concepts and learn collaboratively."
+},
+{
+"question": "sleep",
+"answer": "Adequate sleep is important for concentration, memory, and academic performance."
+},
+{
+"question": "coffee",
+"answer": "Coffee can help with alertness, but balance and rest are important for long-term productivity."
+},
+{
+"question": "i am overwhelmed",
+"answer": "It's normal to feel overwhelmed sometimes during university. Try breaking tasks into smaller steps and seek support if needed."
+},
+{
+"question": "i am anxious",
+"answer": "University can sometimes create anxiety. Consider speaking with support services or taking time to manage stress."
+},
+{
+"question": "motivate me",
+"answer": "Every assignment, course, and semester moves you one step closer toward your future goals. Keep going."
+},
+{
+"question": "good afternoon",
+"answer": "Good afternoon! Hope your studies are going well today."
+},
+{
+"question": "good evening",
+"answer": "Good evening! Let me know if you need help with anything related to Algoma University."
+},
+{
+"question": "see you later",
+"answer": "See you later! Best of luck with your courses and studies."
+},
+{
+"question": "take care",
+"answer": "Take care! Wishing you success and a productive semester."
+}
 
   ]
 }
