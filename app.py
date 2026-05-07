@@ -155,7 +155,7 @@ def find_knowledge_base_answer(user_question):
             best_score = score
             best_answer = item.get("answer")
 
-    if best_score >= 1:
+        if best_score >= 2:
         return best_answer
 
     return None
