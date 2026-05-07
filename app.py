@@ -179,7 +179,7 @@ def find_knowledge_base_answer(user_question):
         score = len(user_words & question_words)
         required_score = max(2, len(question_words))
 
-        if score >= required_score and score > best_score:
+        if len(user_words) <= 4 and score >= required_score and score > best_score:
             best_score = score
             best_answer = item.get("answer")
 
