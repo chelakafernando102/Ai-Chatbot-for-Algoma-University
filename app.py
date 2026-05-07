@@ -192,7 +192,7 @@ def ask_gemini(message: str) -> str:
 
     try:
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.0-flash",
             safety_settings=SAFETY_SETTINGS,
             generation_config=GENERATION_CONFIG,
             system_instruction=SYSTEM_INSTRUCTION,
