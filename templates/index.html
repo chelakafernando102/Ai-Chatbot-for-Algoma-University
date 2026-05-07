@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgomaU Virtual Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="chat-card">
+      <header class="chat-header">
+        <div>
+          <p class="eyebrow">Algoma University</p>
+          <h1>Virtual Assistant</h1>
+        </div>
+        <span id="statusBadge" class="status-badge">Checking...</span>
+      </header>
+
+      <section id="chatWindow" class="chat-window" aria-live="polite">
+        <div class="message bot-message">
+          <div class="avatar">AU</div>
+          <div class="bubble">
+            Hey! Ask me about academics, programs, fees, student support, or course registration.
+          </div>
+        </div>
+      </section>
+
+      <form id="chatForm" class="chat-form">
+        <input
+          id="messageInput"
+          type="text"
+          autocomplete="off"
+          placeholder="Ask something like: Can I register for COSC3407?"
+          aria-label="Message"
+        />
+        <button id="sendButton" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

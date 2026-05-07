@@ -1,0 +1,100 @@
+{
+  "questions": [
+    {
+      "question": "Hello",
+      "answer": "Hello, how can I help you today?"
+    },
+    {
+      "question": "Hi",
+      "answer": "Hello, how can I help you today?"
+    },
+    {
+      "question": "Hey",
+      "answer": "Hey! What can I help you with at Algoma University?"
+    },
+    {
+      "question": "What majors does Algoma University offer?",
+      "answer": "Algoma University offers programs across areas such as Computer Science, Business Administration, Psychology, Social Work, Law and Politics, Biology, Sociology, English, History, and Community Economic and Social Development. Always confirm current program availability on Algoma University's official website."
+    },
+    {
+      "question": "How do I register for courses at Algoma University?",
+      "answer": "You can register for courses through the Algoma University student portal and review course schedules on the official Algoma course schedules page. If you are unsure about prerequisites or degree requirements, contact Academic Advising."
+    },
+    {
+      "question": "What academic advising services are available at Algoma University?",
+      "answer": "Academic advising can help with course selection, degree planning, program requirements, academic concerns, and understanding your path to graduation."
+    },
+    {
+      "question": "Can I pursue a double major or minor at Algoma University?",
+      "answer": "In many cases, students may pursue a double major or add a minor, but requirements depend on the program. Confirm with Academic Advising or the Registrar before making changes."
+    },
+    {
+      "question": "What are the prerequisites for the Computer Science program at Algoma University?",
+      "answer": "Computer Science admission and course prerequisites depend on the specific program and course level. For individual COSC courses, check the official academic calendar or ask Academic Advising."
+    },
+    {
+      "question": "What are the prerequisites for the Business Administration program at Algoma University?",
+      "answer": "Business Administration admission requirements can vary by credential and student background. Check Algoma University's official admissions page or contact Admissions for the most accurate requirement list."
+    },
+    {
+      "question": "How can a student pay Algoma University fees?",
+      "answer": "Students usually pay fees through approved payment methods listed by Algoma University, such as the student portal or authorized tuition payment providers. Confirm the current method through the official tuition and fees page."
+    },
+    {
+      "question": "What are the available courses for 1st-year Computer Science students?",
+      "answer": [
+        {"course_name": "Introduction to Computer Science I (COSC1046)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Introduction to Computer Science II (COSC1047)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Computer Applications (COSC1701)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Computer Applications II (COSC1702)", "location": "Sault Ste. Marie / Brampton / Online"}
+      ]
+    },
+    {
+      "question": "What are the available courses for 2nd-year Computer Science students?",
+      "answer": [
+        {"course_name": "Data Structures I (COSC2006)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Data Structures II (COSC2007)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Database Programming (COSC2307)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Assembly Language Programming (COSC2406)", "location": "Sault Ste. Marie / Brampton / Online"}
+      ]
+    },
+    {
+      "question": "What are the available courses for 3rd-year Computer Science students?",
+      "answer": [
+        {"course_name": "Theory of Computing (COSC3106)", "location": "Brampton / Online"},
+        {"course_name": "Artificial Intelligence (COSC3117)", "location": "Brampton"},
+        {"course_name": "Programming Languages (COSC3127)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Computer Organization (COSC3406)", "location": "Sault Ste. Marie / Brampton / Online"},
+        {"course_name": "Operating Systems I (COSC3407)", "location": "Brampton / Online"}
+      ]
+    },
+    {
+      "question": "What are the available courses for 4th-year Computer Science students?",
+      "answer": [
+        {"course_name": "Analysis of Algorithms (COSC4106)", "location": "Sault Ste. Marie / Brampton"},
+        {"course_name": "Computer Networks (COSC4436)", "location": "Brampton"},
+        {"course_name": "Web Data Management (COSC4806)", "location": "Online"}
+      ]
+    },
+    {
+      "question": "What are the total credits for Business Administration and Computer Science?",
+      "answer": "Many bachelor's programs are around 120 credits, but exact requirements depend on the credential and calendar year. Confirm your own requirements with the Academic Calendar or Academic Advising."
+    },
+    {
+      "question": "What scholarships are available for international students?",
+      "answer": "Algoma University offers different awards and scholarships depending on eligibility, academic achievement, and intake. Check the official awards and scholarships page for current details."
+    },
+    {
+      "question": "What are the tuition fees?",
+      "answer": "Tuition depends on your program, student status, course load, and academic year. Check Algoma University's official tuition and fees page or your student account for the exact amount."
+    },
+    {
+      "question": "What are the residence options and application deadlines?",
+      "answer": "Residence options and deadlines can change by year and campus. Check Algoma University's official residence page or contact Residence Services."
+    },
+    {
+      "question": "Where are the Algoma University campuses located?",
+      "answer": "Algoma University has campuses in Sault Ste. Marie, Brampton, and Timmins."
+    }
+  ]
+}
