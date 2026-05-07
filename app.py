@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify, render_template, request
 import google.generativeai as genai
 
+
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 KNOWLEDGE_BASE_PATH = DATA_DIR / "knowledge_base.json"
@@ -17,6 +18,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
+
 
 GENERATION_CONFIG = {
     "temperature": 0.7,
@@ -58,6 +60,7 @@ If unsure, suggest contacting:
 Do not invent fake policies or fake university information.
 """.strip()
 
+
 COURSE_PREREQUISITES = {
     "COSC2006": ["COSC1047", "MATH1056"],
     "COSC2007": ["COSC2006"],
@@ -84,6 +87,7 @@ DEMO_STUDENT = {
     "failed": ["COSC1047"],
 }
 
+
 app = Flask(__name__)
 
 
@@ -95,14 +99,31 @@ def load_knowledge_base():
         if not isinstance(data, dict):
             return {"questions": []}
 
+        questions = data.get("questions", [])
+
+        if not isinstance(questions, list):
+            return {"questions": []}
+
         return data
 
-    except Exception:
+    except FileNotFoundError:
+        print(f"Knowledge base not found: {KNOWLEDGE_BASE_PATH}")
+        return {"questions": []}
+
+    except json.JSONDecodeError as error:
+        print(f"Knowledge base JSON error: {error}")
+        return {"questions": []}
+
+    except Exception as error:
+        print(f"Knowledge base loading error: {error}")
         return {"questions": []}
 
 
 def normalize_text(text):
-    return re.sub(r"\s+", " ", str(text).strip().lower())
+    text = str(text).strip().lower()
+    text = re.sub(r"[^\w\s]", "", text)
+    text = re.sub(r"\s+", " ", text)
+    return text
 
 
 def extract_course_code(text):
@@ -115,8 +136,12 @@ def find_knowledge_base_answer(user_question):
     question_items = knowledge_base.get("questions", [])
 
     normalized_question = normalize_text(user_question)
+    user_words = set(normalized_question.split())
 
-    # EXACT MATCH
+    if not normalized_question:
+        return None
+
+    # 1. Exact match only
     for item in question_items:
         if not isinstance(item, dict):
             continue
@@ -126,19 +151,18 @@ def find_knowledge_base_answer(user_question):
         if question == normalized_question:
             return item.get("answer")
 
-    # PARTIAL PHRASE MATCH
-    for item in question_items:
-        if not isinstance(item, dict):
-            continue
+    # 2. Short keyword match only for short user messages
+    if len(user_words) <= 3:
+        for item in question_items:
+            if not isinstance(item, dict):
+                continue
 
-        question = normalize_text(item.get("question", ""))
+            question = normalize_text(item.get("question", ""))
 
-        if question and question in normalized_question:
-            return item.get("answer")
+            if question and question == normalized_question:
+                return item.get("answer")
 
-    # WORD OVERLAP MATCH
-    user_words = set(normalized_question.split())
-
+    # 3. Strong smart match
     best_answer = None
     best_score = 0
 
@@ -149,16 +173,17 @@ def find_knowledge_base_answer(user_question):
         question = normalize_text(item.get("question", ""))
         question_words = set(question.split())
 
-        score = len(user_words & question_words)
+        if not question_words:
+            continue
 
-        if score > best_score:
+        score = len(user_words & question_words)
+        required_score = max(2, len(question_words))
+
+        if score >= required_score and score > best_score:
             best_score = score
             best_answer = item.get("answer")
 
-        if best_score >= 2:
-        return best_answer
-
-    return None
+    return best_answer
 
 
 def format_answer(answer):
@@ -172,7 +197,6 @@ def format_answer(answer):
             if isinstance(item, dict):
                 course = item.get("course_name", "Course")
                 location = item.get("location", "Location not listed")
-
                 lines.append(f"• {course} — {location}")
             else:
                 lines.append(f"• {item}")
@@ -204,19 +228,26 @@ def can_register(course_code, student=DEMO_STUDENT):
     ]
 
     missing_prerequisites = [
-        course for course in prerequisites if course not in completed
+        course for course in prerequisites
+        if course not in completed and course not in failed
     ]
 
     if failed_prerequisites:
         return {
             "eligible": False,
-            "message": f"You cannot register for {course_code} because you failed prerequisite(s): {', '.join(failed_prerequisites)}.",
+            "message": (
+                f"You cannot register for {course_code} because you failed "
+                f"prerequisite(s): {', '.join(failed_prerequisites)}."
+            ),
         }
 
     if missing_prerequisites:
         return {
             "eligible": False,
-            "message": f"You cannot register for {course_code} because you are missing prerequisite(s): {', '.join(missing_prerequisites)}.",
+            "message": (
+                f"You cannot register for {course_code} because you are missing "
+                f"prerequisite(s): {', '.join(missing_prerequisites)}."
+            ),
         }
 
     return {
@@ -252,6 +283,8 @@ def is_registration_question(message):
         "prerequisite",
         "prereq",
         "take course",
+        "can i take",
+        "can i register",
     ]
 
     return any(keyword in lowered for keyword in keywords)
@@ -259,9 +292,11 @@ def is_registration_question(message):
 
 def ask_gemini(message):
     if not GEMINI_API_KEY:
-        return "Gemini API key is missing."
+        return "Gemini API key is missing. Please check your .env file."
 
     try:
+        print("GEMINI CALLED")
+
         model = genai.GenerativeModel(
             model_name="gemini-2.0-flash",
             safety_settings=SAFETY_SETTINGS,
@@ -271,16 +306,14 @@ def ask_gemini(message):
 
         response = model.generate_content(message)
 
-        if response.text:
+        if hasattr(response, "text") and response.text:
             return response.text.strip()
 
-        return "I could not generate a response."
+        return "I could not generate a response. Please try rephrasing your question."
 
-    except Exception:
-        return (
-            "I can help with academics, tuition, student support, scholarships, "
-            "programs, registration, residence, and campus information."
-        )
+    except Exception as error:
+        print(f"Gemini error: {error}")
+        return f"Gemini error: {error}"
 
 
 @app.route("/")
@@ -294,32 +327,29 @@ def health():
         "status": "ok",
         "gemini_configured": bool(GEMINI_API_KEY),
         "knowledge_base_loaded": KNOWLEDGE_BASE_PATH.exists(),
+        "knowledge_base_path": str(KNOWLEDGE_BASE_PATH),
     })
 
 
 @app.route("/ask", methods=["POST"])
 def ask():
     data = request.get_json(silent=True) or {}
-
     message = str(data.get("message", "")).strip()
 
     if not message:
         return jsonify({
-            "response": "Please type a question first."
+            "response": "Please type a question first.",
+            "source": "validation",
         }), 400
 
     course_code = extract_course_code(message)
 
-    # COURSE REGISTRATION LOGIC
     if is_registration_question(message) and course_code:
         result = can_register(course_code)
-
         response_text = result["message"]
 
         if not result["eligible"]:
-            suggestions = suggest_eligible_courses(
-                excluded_course=course_code
-            )
+            suggestions = suggest_eligible_courses(excluded_course=course_code)
 
             if suggestions:
                 response_text += (
@@ -329,36 +359,34 @@ def ask():
 
         return jsonify({
             "response": response_text,
-            "source": "course_rules"
+            "source": "course_rules",
         })
 
-    # KNOWLEDGE BASE SEARCH
     kb_answer = find_knowledge_base_answer(message)
 
     if kb_answer is not None:
         return jsonify({
             "response": format_answer(kb_answer),
-            "source": "knowledge_base"
+            "source": "knowledge_base",
         })
 
-    # GEMINI FALLBACK
     return jsonify({
         "response": ask_gemini(message),
-        "source": "gemini"
+        "source": "gemini",
     })
 
 
 @app.errorhandler(404)
 def not_found(_error):
     return jsonify({
-        "error": "Route not found."
+        "error": "Route not found.",
     }), 404
 
 
 @app.errorhandler(500)
 def server_error(_error):
     return jsonify({
-        "error": "Internal server error."
+        "error": "Internal server error.",
     }), 500
 
 
@@ -366,5 +394,5 @@ if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
         port=5000,
-        debug=True
+        debug=True,
     )
