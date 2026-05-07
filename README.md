@@ -15,18 +15,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Create a `.env` file:
-
-```bash
-cp .env.example .env
-```
-
-Then paste your Gemini key into `.env`:
-
-```env
-GEMINI_API_KEY=your_key_here
-```
-
 ## Run
 
 ```bash
@@ -49,4 +37,3 @@ http://127.0.0.1:5000
 
 ## Important
 
-Do not commit your `.env` file or API key to GitHub.
