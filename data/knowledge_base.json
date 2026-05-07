@@ -96,5 +96,262 @@
       "question": "Where are the Algoma University campuses located?",
       "answer": "Algoma University has campuses in Sault Ste. Marie, Brampton, and Timmins."
     }
+    {
+"question": "academics",
+"answer": "Algoma University offers academic support, advising services, tutoring resources, degree planning assistance, and multiple undergraduate programs across Business, Computer Science, Psychology, Biology, Sociology, and more."
+},
+{
+"question": "academic help",
+"answer": "Students can access academic help through professors, office hours, the Learning Centre, tutoring services, academic advising, and peer support resources."
+},
+{
+"question": "courses",
+"answer": "Algoma University offers courses in Computer Science, Business Administration, Psychology, Biology, Social Sciences, Humanities, and many interdisciplinary programs."
+},
+{
+"question": "computer science",
+"answer": "Algoma University's Computer Science program includes programming, algorithms, operating systems, databases, networking, artificial intelligence, web development, and software engineering courses."
+},
+{
+"question": "business",
+"answer": "The Business Administration program at Algoma University covers management, marketing, accounting, finance, economics, and organizational leadership."
+},
+{
+"question": "psychology",
+"answer": "Psychology students at Algoma University study human behavior, cognition, mental processes, research methods, and psychological theories."
+},
+{
+"question": "fees",
+"answer": "Tuition and fees at Algoma University depend on your program, number of courses, student status, and academic year. Domestic and international tuition rates are different."
+},
+{
+"question": "tuition",
+"answer": "Tuition costs vary depending on your academic program and student status. Students should check the official tuition and fees page for updated information."
+},
+{
+"question": "residence",
+"answer": "Residence options are primarily available at the Sault Ste. Marie campus. Students should apply early because space may be limited."
+},
+{
+"question": "scholarships",
+"answer": "Algoma University offers scholarships, bursaries, entrance awards, and academic achievement awards for eligible students."
+},
+{
+"question": "international students",
+"answer": "Algoma University supports international students with orientation, immigration guidance, advising services, and student support resources."
+},
+{
+"question": "student support",
+"answer": "Student support services include academic advising, counseling, accessibility services, wellness resources, career support, and tutoring."
+},
+{
+"question": "registration",
+"answer": "Course registration is completed through the student portal. Students should ensure prerequisites are completed before registering."
+},
+{
+"question": "programs",
+"answer": "Programs at Algoma University include Computer Science, Business Administration, Psychology, Sociology, Biology, Social Work, Law and Politics, and more."
+},
+{
+"question": "help",
+"answer": "I can help with academics, tuition, registration, residence, student support, scholarships, programs, and general Algoma University information."
+},
+{
+"question": "support",
+"answer": "Algoma University offers multiple support services including academic support, counseling, accessibility services, and student success resources."
+},
+{
+"question": "campus",
+"answer": "Algoma University campuses are located in Sault Ste. Marie, Brampton, and Timmins."
+},
+{
+"question": "sault ste marie",
+"answer": "The Sault Ste. Marie campus is the main campus of Algoma University and offers residence, athletics, student services, and multiple academic programs."
+},
+{
+"question": "brampton",
+"answer": "The Brampton campus offers several undergraduate programs and serves a diverse student population in the Greater Toronto Area."
+},
+{
+"question": "timmins",
+"answer": "The Timmins campus provides selected programs and educational opportunities for students in Northern Ontario."
+},
+{
+"question": "admissions",
+"answer": "Admission requirements vary depending on your program and student status. Students should review official admissions information before applying."
+},
+{
+"question": "apply",
+"answer": "Students can apply to Algoma University through official application platforms and admissions channels."
+},
+{
+"question": "how to apply",
+"answer": "Applications are generally completed online through official university admissions systems."
+},
+{
+"question": "deadlines",
+"answer": "Application and registration deadlines vary by semester and program. Students should regularly check official university dates."
+},
+{
+"question": "exam",
+"answer": "Exams are scheduled during designated examination periods. Students should check course outlines and official schedules."
+},
+{
+"question": "midterm",
+"answer": "Midterms are course assessments typically held during the middle of the semester."
+},
+{
+"question": "assignment",
+"answer": "Assignments are an important part of university courses and contribute toward final grades."
+},
+{
+"question": "grades",
+"answer": "Grades are usually available through the student portal after assessments are completed and finalized."
+},
+{
+"question": "gpa",
+"answer": "GPA stands for Grade Point Average and reflects your academic performance across completed courses."
+},
+{
+"question": "probation",
+"answer": "Academic probation may occur when a student's academic performance falls below required standards."
+},
+{
+"question": "graduation",
+"answer": "Graduation requirements depend on your program and credit completion."
+},
+{
+"question": "degree",
+"answer": "Algoma University offers undergraduate degrees in multiple academic disciplines."
+},
+{
+"question": "clubs",
+"answer": "Students can join clubs, organizations, and campus activities to become more involved in student life."
+},
+{
+"question": "gym",
+"answer": "Athletic and recreational facilities may be available depending on the campus."
+},
+{
+"question": "sports",
+"answer": "Algoma University offers athletics and recreational opportunities for students."
+},
+{
+"question": "wifi",
+"answer": "Campus internet and Wi-Fi access are generally available for students."
+},
+{
+"question": "library",
+"answer": "The university library provides study spaces, research materials, online databases, and academic support resources."
+},
+{
+"question": "study",
+"answer": "Staying organized, attending classes, practicing consistently, and using university support services can help improve study performance."
+},
+{
+"question": "stress",
+"answer": "University can become stressful at times. Students are encouraged to use wellness resources and seek support when needed."
+},
+{
+"question": "mental health",
+"answer": "Mental health and wellness support resources may be available to students through counseling and support services."
+},
+{
+"question": "friends",
+"answer": "Joining clubs, attending events, and participating in campus activities are great ways to meet new people."
+},
+{
+"question": "food",
+"answer": "Food services and nearby dining options may vary depending on the campus."
+},
+{
+"question": "housing",
+"answer": "Students may choose residence or off-campus housing depending on availability and preference."
+},
+{
+"question": "parking",
+"answer": "Parking availability and permits vary depending on the campus."
+},
+{
+"question": "online classes",
+"answer": "Some courses and programs may be available online or in hybrid formats."
+},
+{
+"question": "part time",
+"answer": "Part-time students usually take fewer courses than full-time students."
+},
+{
+"question": "full time",
+"answer": "Full-time status depends on the number of courses or credits a student is taking."
+},
+{
+"question": "job",
+"answer": "Students may explore on-campus jobs, co-op opportunities, and career services for employment support."
+},
+{
+"question": "career",
+"answer": "Career services may help students with resumes, interviews, networking, and job preparation."
+},
+{
+"question": "resume",
+"answer": "A strong resume should clearly highlight your education, skills, projects, and work experience."
+},
+{
+"question": "interview",
+"answer": "Preparing examples, practicing communication, and researching employers can help improve interview performance."
+},
+{
+"question": "coding",
+"answer": "Computer Science students often work with programming languages, algorithms, databases, and software development concepts."
+},
+{
+"question": "programming",
+"answer": "Programming courses help students develop logical thinking and software development skills."
+},
+{
+"question": "artificial intelligence",
+"answer": "Artificial Intelligence courses may cover machine learning, intelligent systems, algorithms, and AI applications."
+},
+{
+"question": "operating systems",
+"answer": "Operating Systems courses cover processes, memory management, scheduling, concurrency, and system architecture."
+},
+{
+"question": "database",
+"answer": "Database courses teach students about data storage, SQL, database design, and information management."
+},
+{
+"question": "algorithms",
+"answer": "Algorithms courses focus on computational problem solving, efficiency, and data processing methods."
+},
+{
+"question": "networking",
+"answer": "Networking courses introduce concepts such as protocols, communication systems, and network architecture."
+},
+{
+"question": "i failed",
+"answer": "Many students face academic setbacks at some point. Consider speaking with Academic Advising and creating a plan moving forward."
+},
+{
+"question": "i am tired",
+"answer": "Balancing university life can be exhausting. Remember to rest, stay organized, and take breaks when needed."
+},
+{
+"question": "good morning",
+"answer": "Good morning! Hope your day at Algoma University goes well."
+},
+{
+"question": "good night",
+"answer": "Good night! Take care and good luck with your studies."
+},
+{
+"question": "thanks",
+"answer": "You're welcome! Feel free to ask me anything else about Algoma University."
+},
+{
+"question": "bye",
+"answer": "Goodbye! Wishing you success in your academic journey at Algoma University."
+}
+
   ]
 }
