@@ -5,6 +5,9 @@ An AI-powered university support chatbot developed for Algoma University student
 The chatbot provides academic assistance, course registration guidance, prerequisite validation, and real-time conversational support through an interactive web interface.
 
 ---
+## Live Demo
+https://ai-chatbot-for-algoma-university.onrender.com
+
 
 ## ✨ Features
 
